@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<link rel="stylesheet" href="css/ui_kit.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shopping.css">
+	<link rel="stylesheet" href="css/shopping_media.css">
+	<link rel="stylesheet" href="css/ui_kit_media.css">
+	<link rel="stylesheet" href="css/index_media.css">
+</head>
+<body>
+	<header>
+		<div class="container-header">
+			<div class="header-inner">
+				<a href="index.html" class="logo">
+					<img src="img/logo.svg" alt="">
+				</a>
+				<div class="header-inner__right-part">
+					<ul class="menu">
+						<li class="active">
+							<a href="">Shopping</a>
+						</li>
+						<li>
+							<a href="">Insurance</a>
+						</li>
+						<li>
+							<a href="">Events</a>
+						</li>
+						<li>
+							<a href="">Finance</a>
+						</li>
+						<li class="more-link">
+							<a href="">More</a>
+							<div class="sub-menu">
+								<a href="">Something else</a>
+								<a href="">Something else</a>
+							</div>
+						</li>
+					</ul>
+					<a href="" class="search">
+						<img src="img/search.svg" alt="">
+					</a>
+					<div class="flex-btn">
+						<a href="#popup_login" class="btn btn--blue open-popup">
+							Login
+						</a>
+						<a href="#popupRegistration" class="btn btn--red open-popup">
+							Registration
+						</a>
+					</div>
+				</div>
+				<div class="gumb"></div>
+			</div>
+		</div>
+	</header>
+
+<div  class="popup mfp-hide white-popup-block" id="popupRegistration">
+	<h2 class="popup-heading popup-heading--center">Registration</h2>
+	<svg class="popup-close" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M14 2L2 14M14 14L2 2" stroke="#3394C6" stroke-width="3" stroke-linecap="round"/>
+	</svg>
+	<form action="" class="form form-registration" autocomplete="off">
+		<label for="" class="form-input">
+			<span class="form-input__name">Name and Surname</span>
+			<input type="text" placeholder="Name and Surname" name="name">
+		</label>
+		<label for="" class="form-input">
+			<span class="form-input__name">Charity organization name</span>
+			<input type="text" placeholder="Charity organization" name="charity">
+		</label>
+		<label for="" class="form-input">
+			<span class="form-input__name">Your Email</span>
+			<input type="text" placeholder="Email" name="email">
+		</label>
+		<label for="" class="form-input password">
+			<span class="form-input__name">Create a password</span>
+			<input type="password" id="input-password" placeholder="Create a password" name="password">
+			<span class="open-password">
+				<img src="img/hide_password.svg" alt="">
+			</span>
+			<span class="closed-password">
+				<img src="img/closed_password.svg" alt="">
+			</span>
+		</label>
+		<button href="" class="btn btn--red open-popup">Registration</button>
+		<a href="" class="have-account have-account--center open-popup">Have an account?</a>
+	</form>
+</div>
+
+<div  class="popup mfp-hide white-popup-block" id="popup_login">
+	<h2 class="popup-heading popup-heading--center">Login</h2>
+	<svg class="popup-close" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M14 2L2 14M14 14L2 2" stroke="#3394C6" stroke-width="3" stroke-linecap="round"/>
+	</svg>
+	<form action="" class="form form-login" autocomplete="off">
+		<label for="" class="form-input">
+			<span class="form-input__name">Your Email</span>
+			<input type="text" placeholder="Email" name="email">
+		</label>
+		<label for="" class="form-input password">
+			<span class="form-input__name">Create a password</span>
+			<input type="password" id="input-password" placeholder="Create a password" name="password">
+			<span class="open-password">
+				<img src="img/hide_password.svg" alt="">
+			</span>
+			<span class="closed-password">
+				<img src="img/closed_password.svg" alt="">
+			</span>
+		</label>
+		<button href="" class="btn btn--red">Registration</button>
+		<div class="form__links">
+			<a href="">Registration</a>
+			<a href="">Restore password</a>
+		</div>
+	</form>
+</div>
+
+<div class="popup mfp-hide white-popup-block" id="popup">
+	<h2 class="popup-heading popup-heading--center">Restore password</h2>
+	<p class="text-description text-description--center">Login or register to go to purchases or online services from the list</p>
+	<svg class="popup-close" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M14 2L2 14M14 14L2 2" stroke="#3394C6" stroke-width="3" stroke-linecap="round"/>
+	</svg>
+	<form action="" class="form form-restore-password" autocomplete="off">
+		<label for="" class="form-input">
+			<span class="form-input__name">Your Email</span>
+			<input type="text" placeholder="Email" name="email">
+		</label>
+		<button href="" class="btn btn--red">Registration</button>
+		<div class="form__links">
+			<a href="">Registration</a>
+			<a href="">Login</a>
+		</div>
+	</form>
+</div>

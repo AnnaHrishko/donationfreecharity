@@ -1,0 +1,19 @@
+.shopping-page {
+  padding: 65px 0 80px;
+}
+
+.shopping-sec {
+  padding-bottom: 60px;
+}
+.shopping-sec .shopping-wraper {
+  margin-bottom: 40px;
+}
+.shopping-sec__title-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+.shopping-sec .search-form {
+  width: 30%;
+}
