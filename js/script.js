@@ -7,15 +7,17 @@ $('.gumb').click(function(){
 })
 
 $(".open-password").click(function(){
+    $('.input-password').addClass('change-color')
 	$(".open-password").hide();
     $(".closed-password").show();
-    $("#input-password").attr("type","text");
+    $(".input-password").attr("type","text");
 });
 
 $(".closed-password").click(function(){
+    $('.input-password').removeClass('change-color')
     $(".closed-password").hide();
     $(".open-password").show();
-    $("#input-password").attr("type","password");
+    $(".input-password").attr("type","password");
 });
 
 $(function() {
@@ -105,32 +107,72 @@ $(function() {
     });
 });
 
-$(function () {
-	$('.open-popup').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#username',
-		modal: true,
-	});
-	$(document).on('click', '.popup-close', function (e) {
-		e.preventDefault();
-		$.magnificPopup.close();
-	});
-});
 
-$(function () {
-	$('.open-popup-registration').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#username',
-		modal: true,
-	});
-	$(document).on('click', '.popup-close', function (e) {
-		e.preventDefault();
-		$.magnificPopup.close();
-	});
-});
+$('.popup-close').click(function(){
+    $('.main-popup-wrap').fadeOut(200);
+    $('body').removeClass('hidden');
+    return false
+})
+$('.popup-closer').click(function(){
+    $('.main-popup-wrap').fadeOut(200);
+    $('body').removeClass('hidden');
+    return false
+})
 
-// if ( $('.form input')[0].valid() ) {
-//     $(this).toggleClass('success')
-// }
+$('.open-popup-login').click(function(){
+    $('.popupLogin').fadeIn(300);
+     $('body').addClass('hidden');
+     return false
+})
+
+$('.open-popup-registration').click(function(){
+    $('.popupRegistration').fadeIn(300);
+     $('body').addClass('hidden');
+     return false
+})
+
+$('.have-account').click(function(){
+    $('.popupLogin').fadeIn(300);
+    $('body').addClass('hidden');
+     return false
+})
+
+$('.have-account').click(function(){
+    $('.popupRegistration').fadeOut()
+    $('.popupLogin').fadeIn()   
+})
+
+$('.registration-link-open').click(function(){
+    $('.popupRegistration').fadeIn(300);
+    $('body').addClass('hidden');
+     return false
+})
+
+$('.registration-link-open').click(function(){
+    $('.popupLogin').fadeOut()
+    $('.popupRestorePassword').fadeOut()
+    $('.popupRegistration').fadeIn()   
+})
+
+$('.restore-password-link-open').click(function(){
+    $('.popupRestorePassword').fadeIn(300);
+    $('body').addClass('hidden');
+     return false
+})
+
+$('.restore-password-link-open').click(function(){
+    $('.popupLogin').fadeOut()
+    $('.popupRestorePassword').fadeIn()   
+})
+
+$('.login-link-open').click(function(){
+    $('.popupLogin').fadeIn(300);
+    $('body').addClass('hidden');
+     return false
+})
+
+$('.login-link-open').click(function(){
+    $('.popupRestorePassword').fadeOut()
+    $('.popupLogin').fadeIn()   
+})
+

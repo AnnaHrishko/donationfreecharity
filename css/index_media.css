@@ -73,6 +73,10 @@
     margin-bottom: 0;
     margin-right: 20px;
   }
+  .donation-free-sec__text .flex-btn {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 768px) {
   .how-it-work-sec {
@@ -96,8 +100,12 @@
     margin-right: 0;
     padding-top: 20px;
   }
+  .donation-free-sec__text .main-heading {
+    text-align: center;
+    line-height: 44px;
+  }
   .donation-free-sec__text .flex-btn {
-    display: flex;
+    justify-content: center;
   }
   .donation-free-sec__text .text-description {
     text-align: center;
